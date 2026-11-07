@@ -1,0 +1,324 @@
+/* Affiliate page styles. Loaded after style.css.
+   New classes use the "aff-" prefix so they never clash with other pages. */
+
+:root {
+  --aff-purple: #673de6;
+  --aff-soft: #f4f1ff;
+  --aff-text: #1d1e20;
+  --aff-muted: #5b5d63;
+}
+
+.aff-promo {
+  background: #1d1e20;
+  color: white;
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 0.6rem 1rem;
+}
+
+.aff-hero {
+  padding: 5rem 1.5rem 7rem;
+}
+
+.aff-hero .section-1-h2 {
+  font-size: clamp(2rem, 6vw, 4.5rem);
+}
+
+.aff-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0 1.5rem;
+  border-radius: 10px;
+  background: white;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.aff-btn:hover {
+  transform: scale(1.05);
+}
+
+.aff-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+
+.aff-soft {
+  max-width: none;
+  background: var(--aff-soft);
+}
+
+.aff-soft > * {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aff-section:not(.aff-soft) .aff-btn,
+.aff-soft .aff-btn {
+  background: var(--aff-purple);
+  color: white;
+}
+
+.aff-title {
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  font-weight: 500;
+  text-align: center;
+  color: var(--aff-text);
+  margin-bottom: 2.5rem;
+}
+
+.aff-center {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+/* Cards */
+.aff-steps,
+.aff-grid3 {
+  display: grid;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.aff-steps {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.aff-grid3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.aff-card {
+  background: white;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 1rem;
+  padding: 1.75rem;
+}
+
+.aff-card:hover {
+  border-color: var(--aff-purple);
+}
+
+.aff-card h3 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+
+.aff-card p {
+  color: var(--aff-muted);
+  line-height: 1.6;
+}
+
+.aff-step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  background: var(--aff-purple);
+  color: white;
+  font-weight: 500;
+}
+
+.aff-link-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.aff-link {
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--aff-purple);
+  font-weight: 600;
+}
+
+/* Testimonial slider */
+.aff-slider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.aff-slides {
+  flex: 1;
+}
+
+.aff-slide {
+  background: var(--aff-soft);
+  border-radius: 1rem;
+  padding: 2rem;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.aff-arrow {
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 50%;
+  background: white;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.aff-arrow:hover {
+  background: var(--aff-soft);
+}
+
+.aff-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1.25rem;
+}
+
+.aff-dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #cfc6f5;
+  cursor: pointer;
+}
+
+.aff-dot[aria-current="true"] {
+  background: var(--aff-purple);
+}
+
+.aff-arrow:focus-visible,
+.aff-dot:focus-visible,
+.aff-btn:focus-visible,
+.aff-link:focus-visible,
+.aff-footer a:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* Final CTA */
+.aff-join {
+  background: var(--aff-purple);
+  color: white;
+  text-align: center;
+  padding: 5rem 1.5rem;
+}
+
+.aff-join h2 {
+  font-size: clamp(1.8rem, 4vw, 2.75rem);
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.aff-join p {
+  max-width: 560px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.aff-btn-white {
+  background: white !important;
+  color: black !important;
+}
+
+/* Footer */
+.aff-footer {
+  background: #1d1e20;
+  color: #d9d9dc;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.aff-footer-cols {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+}
+
+.aff-footer h3 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.aff-footer ul {
+  list-style: none;
+}
+
+.aff-footer li {
+  margin-bottom: 0.5rem;
+}
+
+.aff-footer a {
+  color: #d9d9dc;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.aff-footer a:hover {
+  text-decoration: underline;
+}
+
+.aff-copy {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .aff-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aff-footer-cols {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .aff-section {
+    padding: 3.5rem 1.25rem;
+  }
+
+  .aff-steps,
+  .aff-grid3 {
+    grid-template-columns: 1fr;
+  }
+
+  .aff-footer-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aff-promo {
+    font-size: 0.75rem;
+  }
+
+  .aff-arrow {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .aff-slide {
+    padding: 1.25rem;
+    font-size: 0.95rem;
+  }
+}
