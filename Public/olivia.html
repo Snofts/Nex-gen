@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+    <title>The technology behind Tolivia's Lipgloss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap rel=stylesheet"> 
+    <link rel="stylesheet" href="olivia.style.css">
+</head>
+<body>
+    <div class="promo" aria-live="polite">
+        <span class="promo-text" id="promoText">30-day money-back guarantee</span>
+    </div>
+<header class="hero">
+    <a href="#" class="logo" aria-label="Home">
+        <svg viewBox="0 0 40 44" width="40" height="44" fill="#fff" arai-hidden="true">
+
+        </svg>
+    </a>
+    <h1>The technology behind Tolivia's Lipgloss</h1>
+    <p class="hero-text">
+        Tolivia builds its own infrastructure and software. AI agents, servers, storage, network, and control panel are developed and operated in--house rather than resolved from another provider
+    </p>
+</header>
+<main class="features">
+    <h2>Fast, secure and always on</h2>
+    <div class="slider" id="slider">
+        <article class="card card-purple">
+            <h3>Your purchases load fast</h3>
+            <p>The storage and Litespeed servers deliver pages in milliseconds, not seconds. </p>
+        </article>
+        <article class="card card-blue">
+            <h3>Your data is always secure</h3>
+            <p>Firewalls, malware scanning, and daily backuups protect every site you host.</p>
+        </article>
+        <article class="card card-pink">
+            <h3>Your site is always on</h3>
+            <p>Monitoring and automatic failover keep your projects online around the clock.</p>
+        </article>
+    </div>
+    <div class="dots" id="dots" aria-hidden="true"></div>
+    <section class="automation">
+  <div class="automation-text">
+    <h2>Built to run on autopilot</h2>
+    <p>
+      Every part of the platform can be controlled by code. Use the API,
+      run commands from your terminal, or connect your favorite tools
+      and let them manage your projects for you.
+    </p>
+    <div class="auto-links">
+      <a href="#">API</a>
+      <span>•</span>
+      <a href="#">Connector</a>
+      <span>•</span>
+      <a href="#">Headless</a>
+    </div>
+  </div>
+
+  <div class="tile-panel">
+    <div class="tile-row">
+      <div class="tile t1">V</div>
+      <div class="tile t2">C</div>
+      <div class="tile"></div>
+      <div class="tile t3">G</div>
+      <div class="tile"></div>
+    </div>
+    <div class="tile-row">
+      <div class="tile t4">A</div>
+      <button class="tile tile-connect" id="connectBtn">🔗 Connect</button>
+      <div class="tile t5">O</div>
+    </div>
+    <div class="tile-row">
+      <div class="tile t6">✺</div>
+      <div class="tile t7">✉</div>
+      <div class="tile"></div>
+      <div class="tile t8">☁</div>
+      <div class="tile t9">❖</div>
+    </div>
+  </div>
+</section>
+        <section class="datacenters">
+  <h2>Data centers worldwide</h2>
+  <p class="dc-sub">Host close to your visitors and deliver fast everywhere. Switching locations is free.</p>
+  <div class="dc-tabs" id="dcTabs">
+    <button class="dc-tab active" data-region="na">North America</button>
+    <button class="dc-tab" data-region="sa">South America</button>
+    <button class="dc-tab" data-region="eu">Europe</button>
+    <button class="dc-tab" data-region="af">South Africa</button>
+    <button class="dc-tab" data-region="as">Asia</button>
+    <button class="dc-tab" data-region="au">Australia</button>
+  </div>
+
+  <div class="dc-content">
+    <div class="dc-map" id="dcMap"></div>
+    <div class="dc-info">
+      <h3 id="dcTitle">Locations in Africa</h3>
+      <ul id="dcList"></ul>
+    </div>
+  </div>
+</section>
+<section class="reliability">
+  <div class="rel-text">
+    <h2>Reliability you can check</h2>
+    <p>
+      Uptime is measured and published. Every past incident is listed on
+      our status page, backups run on a schedule that depends on your plan,
+      and our security practices are documented for anyone to read.
+    </p>
+    <div class="auto-links">
+      <a href="#">Status page</a><span>•</span>
+      <a href="#">Trust center</a>
+    </div>
+  </div>
+
+  <div class="rel-visual">
+    <div class="mock">
+      <div class="mock-bar"><i></i><i></i><i></i></div>
+      <div class="mock-body">
+        <aside class="mock-side">
+          <div class="mock-brand">TOLIVIA</div>
+          <ul id="mockMenu">
+            <li class="active">Overview</li>
+            <li>Deployments</li>
+            <li>Runtime logs</li>
+            <li>Hosting plan</li>
+            <li>Performance</li>
+            <li>Analytics</li>
+            <li>Security</li>
+            <li>Domains</li>
+            <li>Files</li>
+          </ul>
+        </aside>
+        <div class="mock-main">
+          <div class="mock-search">🔍 Search</div>
+          <h4>Dashboard</h4>
+          <div class="mock-card">
+            <div class="site-row">
+              <strong>mysite.online</strong>
+              <span class="manage">Manage domain</span>
+            </div>
+            <div class="chips">
+              <span class="chip ok">Running</span>
+              <span class="chip ok">Auto-deployment</span>
+              <span class="chip ok">Protected</span>
+              <span class="chip ok">SSL</span>
+              <span class="chip off">CDN</span>
+            </div>
+          </div>
+
+          <div class="mock-card">
+            <h5>Plan resource usage</h5>
+            <div class="usage">
+              <div class="ring"></div>
+              <div class="stat">
+                <small>Disk usage</small><b class="blue">134 GB / 300 GB</b>
+                <small>Inodes</small><b>1.61M / 4M</b>
+              </div>
+              <div class="stat">
+                <small>CPU</small><b id="cpuValue">55%</b>
+                <small>Memory</small><b>650 MB</b>
+              </div>
+</section>
+<section class="eco">
+  <div class="eco-visual" id="ecoVisual">
+    <div class="eco-tile eco-server">
+      <div class="bar"><i></i><i></i></div>
+      <div class="bar"><i></i><i></i></div>
+    </div>
+    <div class="eco-tile eco-leaf">🍃</div>
+  </div>
+  <div class="eco-text">
+    <h2>Responsible infrastructure</h2>
+    <p>
+      We offset <strong id="ecoCount">0</strong>% of the power our data centers
+      use with renewable energy, give old hardware a second life through
+      reuse or recycling, and keep track of our emissions.
+    </p>
+    <a href="#" class="eco-link">More on sustainability</a>
+  </div>
+</section>
+<section class="faq">
+  <h2>Tolivia technology FAQs</h2>
+  <p class="faq-sub">Quick answers about the technology and infrastructure behind Tolivia.</p>
+  <div class="faq-list" id="faqList">
+    <div class="faq-item open">
+      <button class="faq-q" aria-expanded="true">
+        What technology powers the platform?
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-a"><div><p>
+        Everything runs on fast SSD and NVMe storage with an optimized web server.
+        Each account is isolated for safety, and the control panel, network and
+        tools are all built and run by our own team.
+      </p></div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        How fast are the servers?
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-a"><div><p>
+        Pages are served from modern hardware with built-in caching, so most
+        pages load in a fraction of a second.
+      </p></div></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        What uptime do you aim for?
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-a"><div>
+        <p>
+        We measure uptime constantly and publish the results on our status page,
+        including every past incident.
+      </p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        Where are the data centers located?
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-a"><div>
+        <p>
+        We have locations across Africa, North America, South America, Europe,
+        Asia and Australia. You can pick the one closest to your visitors.
+      </p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        How are hosted websites kept secure?
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-a"><div><p>
+        Firewalls, malware scanning, free SSL certificates and protected
+        nameservers work together to keep every site safe.
+      </p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        Are websites backed up automatically?
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-a"><div>
+        <p>
+        Yes. Backups run daily or weekly depending on your plan, and you can
+        restore a copy from the control panel.
+      </p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        What is the control panel and how is it different from others?
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-a"><div>
+        <p>
+        It is our own dashboard, designed to be simple for beginners while still
+        giving advanced users full control over files, domains and settings.
+      </p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        Can it handle sudden traffic spikes?
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-a"><div>
+        <p>
+        Yes. Caching and resource isolation help your site stay fast when
+        visitor numbers jump suddenly.
+      </p>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        Can I trust it for a Lipgloss purchase?
+        <span class="faq-icon"></span>
+      </button>
+      <div class="faq-a"><div>
+        <p>
+        Thousands of lipglosses are being purchased on the platform. Published uptime, daily
+        backups and documented security practices are there to back that up.
+      </p>
+    </div>
+</section>
+</main>
+<footer class="footer">
+  <div class="crumbs"><a href="#">Tolivia</a> &rsaquo; <span>Technology</span></div>
+  <div class="footer-cols">
+    <div>
+      <h4>Hosting</h4>
+      <ul>
+        <li><a href="#">Web hosting</a></li>
+        <li><a href="#">Shared hosting</a></li>
+        <li><a href="#">WordPress hosting</a></li>
+        <li><a href="#">VPS hosting</a></li>
+        <li><a href="#">Cloud hosting</a></li>
+        <li><a href="#">Business email</a></li>
+        <li><a href="#">Hosting for agencies</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Domain</h4>
+      <ul>
+        <li><a href="#">Domain search</a></li>
+        <li><a href="#">Cheap domains</a></li>
+        <li><a href="#">Free domain</a></li>
+        <li><a href="#">WHOIS lookup</a></li>
+        <li><a href="#">Free SSL certificate</a></li>
+        <li><a href="#">Domain transfer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Tools</h4>
+      <ul>
+        <li><a href="#">Website builder</a></li>
+        <li><a href="#">Online store builder</a></li>
+        <li><a href="#">Templates</a></li>
+        <li><a href="#">Logo maker</a></li>
+        <li><a href="#">Migrate to Tolivia</a></li>
+        <li><a href="#">Developer API</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Information</h4>
+      <ul>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Affiliate program</a></li>
+        <li><a href="#">Referral program</a></li>
+        <li><a href="#">Roadmap</a></li>
+        <li><a href="#">Changelog</a></li>
+        <li><a href="#">System status</a></li>
+        <li><a href="#">Trust center</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Our technology</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Student discount</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Knowledge base</a></li>
+        <li><a href="#">Academy</a></li>
+        <li><a href="#">Contact us</a></li>
+        <li><a href="#">Report abuse</a></li>
+        <li><a href="#">Hire an expert</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="fb-left">
+      <a href="#" class="footer-brand">TOLIVIA</a>
+      <div class="pay">
+        <span class="pay-badge">VISA</span>
+        <span class="pay-badge">Mastercard</span>
+        <span class="pay-badge">Bank transfer</span>
+        <span class="pay-more">and more</span>
+      </div>
+    <div class="fb-right">
+      <div class="socials">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="X">x</a>
+        <a href="#" aria-label="YouTube">▶</a>
+        <a href="#" aria-label="TikTok">tt</a>
+      </div>
+      <div class="policies">
+        <a href="#">Privacy policy</a>
+        <a href="#">Refund policy</a>
+        <a href="#">Terms of service</a>
+      </div>
+  <div class="copyright">
+    <p>© 2004-<span id="year">2026</span> Tolivia. Launch, grow, and succeed online.</p>
+    <p>Prices are listed without VAT</p>
+  </div>
+</footer>
+<nav class="bottom-bar" aria-label="Page navigation">
+        <div class="pill">
+            <button id="backBtn" aria-label="Back">&#8249;</button>
+            <button id="fwdBtn" aria-label="Forward">&#8250;</button>
+            </div>
+        <div class="pill url">
+            <span class="tab-count">1</span>
+            <span class="url-text">hostinger.com</span>
+            <button  id="closeBtn" aria-label="Close">&times;</butto>
+        </div>
+        <div class="pill">
+            <button aria-label="Menu" class="menu-btn">&#9776;</button>
+        </div>
+    </nav>
+    <script src="tolivia.js"></script>
+</body>
+</html>
